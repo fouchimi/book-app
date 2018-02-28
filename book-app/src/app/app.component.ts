@@ -10,7 +10,6 @@ import { BookService } from './services/book.service';
 export class AppComponent {
   selectedCategory = 'volumes';
   books = [];
-  sorted = false;
 
   constructor(private bookService: BookService) { }
 
