@@ -4,28 +4,45 @@
   <div class="row">
     <div class="col-xs-8">
       <div class="input-group">
-        <input type="text" class="form-control " placeholder="Search book here ...">
+        <input type="text" class="form-control" #bookName placeholder="Search book here ..." (keyup.enter)="onSearch(bookName.value)">
         <span class="input-group-addon">
-          <span class="glyphicon glyphicon-search"></span>
+          <span class="glyphicon glyphicon-search" (click)="onSearch(bookName.value)"></span>
         </span>
       </div>
     </div>
 
     <div class="pull-left">
       <div class="dropdown">
-        <button data-target="#" href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">Volume
+        <button data-target="#" href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">{{ selectedCategory }}
           <b class="caret"></b>
         </button>
         <ul class="dropdown-menu">
-          <li>
-            <a href="#">Volume</a>
-          </li>
-          <li>
-            <a href="#">BookShelves</a>
+          <li *ngFor="let category of categories">
+            <a href="#" (click)="onSelect(category)"><span>{{ category }}</span></a>
           </li>
         </ul>
       </div>
     </div>
+  </div>
+</div>
+
+<div *ngIf="books.length > 0">
+  <div class="card">
+    <mat-card class="book-card" *ngFor="let book of books">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ book.volumeInfo.title }}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="book.volumeInfo.imageLinks.thumbnail" alt="Photo of book">
+      <mat-card-content>
+        <p>
+          {{ book.volumeInfo.description | summary }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="btn btn-danger">DELETE</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
 

@@ -1,1 +1,13 @@
 @import url('//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+
+.card {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    flex-wrap: wrap 
+}
+
+.book-card {
+    width: 440px;
+    margin: 20px;
+}
