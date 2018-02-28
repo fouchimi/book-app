@@ -10,19 +10,9 @@
         </span>
       </div>
     </div>
-
-    <div class="pull-left">
-      <div class="dropdown">
-        <button data-target="#" href="#" data-toggle="dropdown" class="btn btn-primary dropdown-toggle">{{ selectedCategory }}
-          <b class="caret"></b>
-        </button>
-        <ul class="dropdown-menu">
-          <li *ngFor="let category of categories">
-            <a href="#" (click)="onSelect(category)"><span>{{ category }}</span></a>
-          </li>
-        </ul>
-      </div>
-    </div>
+   
+    <span>Sort By: </span>
+    <button data-target="#" href="#" class="btn btn-primary" (click)="sortBookList()"> Book Title</button>
   </div>
 </div>
 
@@ -31,7 +21,7 @@
     <mat-card class="book-card" *ngFor="let book of books">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>{{ book.volumeInfo.title }}</mat-card-title>
+        <mat-card-title><span class="h4">{{ book.volumeInfo.title }}</span></mat-card-title>
       </mat-card-header>
       <img mat-card-image [src]="book.volumeInfo.imageLinks.thumbnail" alt="Photo of book">
       <mat-card-content>
@@ -40,7 +30,7 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button class="btn btn-danger">DELETE</button>
+        <button class="btn btn-danger" (click)="filterBooks(book.volumeInfo.title)">DELETE</button>
       </mat-card-actions>
     </mat-card>
   </div>

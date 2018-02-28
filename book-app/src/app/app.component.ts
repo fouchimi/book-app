@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { baseURL } from './shared/baseurl';
+import { baseURL, apiKey } from './shared/baseurl';
 import { BookService } from './services/book.service';
 
 @Component({
@@ -8,27 +8,36 @@ import { BookService } from './services/book.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  categories = ['volumes', 'bookshelves'];
-  selectedCategory = this.categories[0];
-  apiKey = 'AIzaSyAG_VtxzJs5c5Hhz2gc8ebzLgw84R6qfck';
+  selectedCategory = 'volumes';
   books = [];
+  sorted = false;
 
-  constructor(private bookService: BookService) {
-  }
+  constructor(private bookService: BookService) { }
 
   onSelect(selectedCategory) {
     this.selectedCategory = selectedCategory;
   }
 
   onSearch(bookName: string) {
-    console.log('Searched book name is: ' + bookName);
     bookName = bookName.trim();
     bookName = bookName.replace(/ /g, '+');
-    const url = baseURL + '/' + this.selectedCategory + '?q=' + bookName + '&apiKey=' + this.apiKey;
+    const url = baseURL + '/' + this.selectedCategory + '?q=' + bookName + '&apiKey=' + apiKey;
     this.bookService.getBook(url)
-      .then(result => { console.log(result.items);
-      this.books = result.items; })
+      .then(result => {this.books = result.items; })
       .catch(error => console.log(error));
+  }
+
+  filterBooks(title) {
+    this.books = this.books.filter(book => book.volumeInfo.title !== title);
+  }
+
+  sortBookList() {
+    this.books.sort(this.compare);
+  }
+
+  compare(first, second) {
+    const firstTitle = first.volumeInfo.title.toUpperCase();
+    const secondTitle = second.volumeInfo.title.toUpperCase();
+    return (firstTitle > secondTitle) ? 1 : ((secondTitle > firstTitle) ? -1 : 0);
   }
 }
