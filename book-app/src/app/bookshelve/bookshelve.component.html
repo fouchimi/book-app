@@ -1,3 +1,21 @@
-<p>
-  bookshelve works!
-</p>
+<div *ngIf="favorites.length > 0">
+  <div class="card">
+    <mat-card class="book-card" *ngFor="let favorite of favorites">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+          <span class="h4">{{ favorite.volumeInfo.title }}</span>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="favorite.volumeInfo.imageLinks.thumbnail" height="600" alt="Photo of book">
+      <mat-card-content>
+        <p>
+          {{ favorite.volumeInfo.description | summary }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="btn btn-danger" (click)="deleteBook(favorite)">DELETE BOOK</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

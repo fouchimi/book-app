@@ -21,6 +21,14 @@ export class BookService {
     this.options = new RequestOptions({ headers: this.headers });
   }
 
+  getFavorites(url: string): Promise<any> {
+    return this.http
+      .get(url, this.options)
+      .toPromise()
+      .then(this.extractData)
+      .catch(this.handleError);
+  }
+
   addBook(url: string, book: any): Promise<any> {
     return this.http
       .post(url, book, this.options)

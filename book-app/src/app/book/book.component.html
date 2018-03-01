@@ -1,0 +1,38 @@
+
+<div class="mainContainer container">
+  <div class="row">
+    <div class="col-xs-8">
+      <div class="input-group">
+        <input type="text" class="form-control" #bookName placeholder="Search book here ..." (keyup.enter)="onSearch(bookName.value)">
+        <span class="input-group-addon">
+          <span class="glyphicon glyphicon-search" (click)="onSearch(bookName.value)"></span>
+        </span>
+      </div>
+    </div>
+
+    <span>Sort By: </span>
+    <button data-target="#" href="#" class="btn btn-primary" (click)="sortBookList()"> Book Title</button>
+  </div>
+</div>
+
+<div *ngIf="books.length > 0">
+  <div class="card">
+    <mat-card class="book-card" *ngFor="let book of books">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>
+          <span class="h4">{{ book.volumeInfo.title }}</span>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image [src]="book.volumeInfo.imageLinks.thumbnail" height="650" alt="Photo of book">
+      <mat-card-content>
+        <p>
+          {{ book.volumeInfo.description | summary }}
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="btn btn-primary" (click)="addBook(book)">ADD BOOK</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
