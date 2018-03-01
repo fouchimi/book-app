@@ -10,12 +10,14 @@ import { MatCardModule, MatButtonModule } from '@angular/material';
 import { AppComponent } from './app.component';
 import { BookService } from './services/book.service';
 import { SummaryPipe } from './summary.pipe';
+import { BookshelveComponent } from './bookshelve/bookshelve.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SummaryPipe
+    SummaryPipe,
+    BookshelveComponent
   ],
   imports: [
     BrowserModule,
