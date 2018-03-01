@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { baseURL, apiKey } from './shared/baseurl';
+import { baseURL, apiKey, localhostURL } from './shared/baseurl';
 import { BookService } from './services/book.service';
 
 @Component({
@@ -10,8 +10,9 @@ import { BookService } from './services/book.service';
 export class AppComponent {
   selectedCategory = 'volumes';
   books = [];
+  bookShelves = [];
 
-  constructor(private bookService: BookService) { }
+  constructor(private bookService: BookService) {}
 
   onSelect(selectedCategory) {
     this.selectedCategory = selectedCategory;
@@ -22,12 +23,23 @@ export class AppComponent {
     bookName = bookName.replace(/ /g, '+');
     const url = baseURL + '/' + this.selectedCategory + '?q=' + bookName + '&apiKey=' + apiKey;
     this.bookService.getBook(url)
-      .then(result => {this.books = result.items; })
+      .then(response => {
+         response.items.forEach(result => result.volumeInfo.title = result.volumeInfo.title.substr(0, 30));
+         this.books = response.items;
+      }).catch(error => console.log(error));
+  }
+
+  addBook(book) {
+    this.bookShelves.push(book);
+    this.books  = this.books.filter((b => b.volumeInfo.title !== book.volumeInfo.title));
+    this.bookService.addBook(localhostURL + '/bookshelves', book)
+      .then((response) => console.log('Book was successfully inserted'))
       .catch(error => console.log(error));
   }
 
-  filterBooks(title) {
-    this.books = this.books.filter(book => book.volumeInfo.title !== title);
+  deleteBook(book) {
+    this.books.push(book);
+    this.bookShelves = this.bookShelves.filter(b => b.volumeInfo.title !== book.volumeInfo.title);
   }
 
   sortBookList() {

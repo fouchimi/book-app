@@ -4,6 +4,7 @@ import { Http, Response, Headers, RequestOptions, URLSearchParams } from '@angul
 
 import 'rxjs/add/operator/toPromise';
 
+
 import { Book } from '../shared/book';
 
 @Injectable()
@@ -18,6 +19,14 @@ export class BookService {
       'Accept': 'q=0.8;application/json;q=0.9'
     });
     this.options = new RequestOptions({ headers: this.headers });
+  }
+
+  addBook(url: string, book: any): Promise<any> {
+    return this.http
+      .post(url, book, this.options)
+      .toPromise()
+      .then(this.extractData)
+      .catch(this.handleError);
   }
 
   getBook(url: string): Promise<any> {

@@ -26,4 +26,6 @@ import { SummaryPipe } from './summary.pipe';
   providers: [BookService, { provide: 'BaseURL', useValue: baseURL }],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {}
+}
