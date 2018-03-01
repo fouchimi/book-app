@@ -45,6 +45,16 @@ export class BookService {
       .catch(this.handleError);
   }
 
+  deleteBook(url: string, id: string): Promise<any> {
+    url = url + '/' + id;
+    console.log(url);
+    return this.http
+      .delete(url, this.options)
+      .toPromise()
+      .then(this.extractData)
+      .catch(this.handleError);
+  }
+
   private extractData(res: Response) {
     const body = res.json();
     return body || {};

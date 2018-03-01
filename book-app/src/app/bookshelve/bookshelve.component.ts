@@ -12,14 +12,19 @@ export class BookshelveComponent implements OnInit {
   constructor(private bookService: BookService) { }
 
   ngOnInit() {
-    const url = localhostURL + '/bookshelves';
-    console.log(url);
     this.bookService.getFavorites(localhostURL + '/bookshelves')
       .then(response => {
         /*response.bookshelves.forEach(result => result.volumeInfo.title = result.volumeInfo.title.substr(0, 30));*/
         console.log(response);
         this.favorites = response;
       }).catch(error => console.log(error));
+  }
+
+  deleteBook(book) {
+    this.favorites = this.favorites.filter(b => b.volumeInfo.title !== book.volumeInfo.title);
+    this.bookService.deleteBook(localhostURL + '/bookshelves', book.id).then(response => {
+      console.log(response);
+    }).catch(error => console.error(error));
   }
 
 }

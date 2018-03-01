@@ -14,10 +14,15 @@ export class BookComponent implements OnInit {
   books = [];
   bookShelves = [];
 
-  ngOnInit() {
-  }
-
   constructor(private bookService: BookService) { }
+
+  ngOnInit() {
+    const url = localhostURL + '/bookshelves';
+    this.bookService.getFavorites(url)
+      .then(response => {
+        this.bookShelves = response;
+      }).catch(error => console.log(error));
+  }
 
   onSelect(selectedCategory) {
     this.selectedCategory = selectedCategory;
@@ -29,8 +34,13 @@ export class BookComponent implements OnInit {
     const url = baseURL + '/' + this.selectedCategory + '?q=' + bookName + '&apiKey=' + apiKey;
     this.bookService.getBook(url)
       .then(response => {
-        response.items.forEach(result => result.volumeInfo.title = result.volumeInfo.title.substr(0, 30));
-        this.books = response.items;
+         response.items.forEach(result => result.volumeInfo.title = result.volumeInfo.title.substr(0, 30));
+         const tempBookShelves = this.bookShelves;
+         this.books = response.items.filter(function (first) {
+           return tempBookShelves.filter(function (second) {
+            return second.volumeInfo.title === first.volumeInfo.title;
+          }).length === 0;
+        });
       }).catch(error => console.log(error));
   }
 
@@ -40,11 +50,6 @@ export class BookComponent implements OnInit {
     this.bookService.addBook(localhostURL + '/bookshelves', book)
       .then((response) => console.log('Book was successfully inserted'))
       .catch(error => console.log(error));
-  }
-
-  deleteBook(book) {
-    this.books.push(book);
-    this.bookShelves = this.bookShelves.filter(b => b.volumeInfo.title !== book.volumeInfo.title);
   }
 
   sortBookList() {
