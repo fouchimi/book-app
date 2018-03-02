@@ -97,103 +97,78 @@
     },
     {
       "kind": "books#volume",
-      "id": "7yKq7X32ZhAC",
-      "etag": "cGH/7NqKx4k",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/7yKq7X32ZhAC",
+      "id": "GX8ODAAAQBAJ",
+      "etag": "f6SIQhAD+3c",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/GX8ODAAAQBAJ",
       "volumeInfo": {
-        "title": "Facebook Fanatic",
-        "subtitle": "Explode Your Popularity, Secure Your Privacy and Buzz Your Band on Facebook",
+        "title": "Hatching Twitter",
+        "subtitle": "A True Story of Money, Power, Friendship, and Betrayal",
         "authors": [
-          "BottleTree Books LLC (Firm)",
-          "Bottletree Books",
-          "Editors of Bottletree Books LLC"
+          "Nick Bilton"
         ],
-        "publisher": "Bottletree Books LLC",
-        "publishedDate": "2007-06-01",
-        "description": "Find out how to launch your career to 15 million potential customers. Learn how to get crazy popular. Concerned about privacy? Read how to secure it in every area. Here are a few of the topics covered: 75 Ways to Buzz Your Band; Popularity Tips and Tricks to Make You Facebook Royalty; Coolest Profile Names and URLs; Get Celebrities and Famous Bands as Your Friend; Poking and Prodding, Oh My; Rock the Facebook Vote; Be a Blog Hog; Climbing the Wall; Go Underground on Facebook with Little Used Privacy Settings; Make Money Off Your Videos; 55 Ways for Authors to Buzz Their Book; 70 Ways to Get Films Recognized; and 40 Ways to Zoom a Political Campaign. Read today and rule Facebook tomorrow!",
+        "publisher": "Penguin",
+        "publishedDate": "2014",
+        "description": "A New York Times bestseller Ev told Jack he had to “chill out” with the deluge of media he was doing. “It’s bad for the company,” Ev said. “It’s sending the wrong message.” Biz sat between them, watching like a spectator at a tennis match. “But I invented Twitter,” Jack said. “No, you didn’t invent Twitter,” Ev replied. “I didn’t invent Twitter either. Neither did Biz. People don’t invent things on the Internet. They simply expand on an idea that already exists.” Despite all the coverage of Twitter’s rise, Nick Bilton of The New York Times is the first journalist to tell the full story—a gripping drama of betrayed friendships and highstakes power struggles. The four founders—Evan Williams, Biz Stone, Jack Dorsey, and Noah Glass—made a dizzyingly fast transition from ordinary engineers to wealthy celebrities. They fought each other bitterly for money, influence, publicity, and control as Twitter grew larger and more powerful. Ultimately they all lost their grip on it. Bilton’s unprecedented access and exhaustive reporting have enabled him to write an intimate portrait of four friends who accidentally changed the world, and what they all learned along the way.",
         "industryIdentifiers": [
           {
             "type": "ISBN_13",
-            "identifier": "9781933747064"
+            "identifier": "9781591847083"
           },
           {
             "type": "ISBN_10",
-            "identifier": "1933747064"
+            "identifier": "1591847087"
           }
         ],
         "readingModes": {
           "text": false,
-          "image": true
+          "image": false
         },
-        "pageCount": 268,
+        "pageCount": 302,
         "printType": "BOOK",
         "categories": [
-          "Computers"
+          "Business & Economics"
         ],
         "averageRating": 3.5,
-        "ratingsCount": 42,
+        "ratingsCount": 4,
         "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": true,
-        "contentVersion": "preview-1.0.0",
+        "allowAnonLogging": false,
+        "contentVersion": "0.1.0.0.preview.0",
         "panelizationSummary": {
           "containsEpubBubbles": false,
           "containsImageBubbles": false
         },
         "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=7yKq7X32ZhAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=7yKq7X32ZhAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          "smallThumbnail": "http://books.google.com/books/content?id=GX8ODAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=GX8ODAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         "language": "en",
-        "previewLink": "http://books.google.com/books?id=7yKq7X32ZhAC&pg=PA65&dq=Facebook&hl=&cd=5&source=gbs_api",
-        "infoLink": "https://play.google.com/store/books/details?id=7yKq7X32ZhAC&source=gbs_api",
-        "canonicalVolumeLink": "https://market.android.com/details?id=book-7yKq7X32ZhAC"
+        "previewLink": "http://books.google.com/books?id=GX8ODAAAQBAJ&printsec=frontcover&dq=Twitter&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=GX8ODAAAQBAJ&dq=Twitter&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Hatching_Twitter.html?hl=&id=GX8ODAAAQBAJ"
       },
       "saleInfo": {
         "country": "US",
-        "saleability": "FOR_SALE",
-        "isEbook": true,
-        "listPrice": {
-          "amount": 2.99,
-          "currencyCode": "USD"
-        },
-        "retailPrice": {
-          "amount": 2.51,
-          "currencyCode": "USD"
-        },
-        "buyLink": "https://play.google.com/store/books/details?id=7yKq7X32ZhAC&rdid=book-7yKq7X32ZhAC&rdot=1&source=gbs_api",
-        "offers": [
-          {
-            "finskyOfferType": 1,
-            "listPrice": {
-              "amountInMicros": 2990000,
-              "currencyCode": "USD"
-            },
-            "retailPrice": {
-              "amountInMicros": 2510000,
-              "currencyCode": "USD"
-            },
-            "giftable": true
-          }
-        ]
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
       },
       "accessInfo": {
         "country": "US",
         "viewability": "PARTIAL",
         "embeddable": true,
         "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED",
+        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
         "epub": {
           "isAvailable": false
         },
         "pdf": {
-          "isAvailable": true
+          "isAvailable": false
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=7yKq7X32ZhAC&hl=&printsec=frontcover&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=GX8ODAAAQBAJ&hl=&printsec=frontcover&source=gbs_api",
         "accessViewStatus": "SAMPLE",
         "quoteSharingAllowed": false
       },
       "searchInfo": {
-        "textSnippet": "An important privacy setting for your <b>Facebook</b> photos is to set the parameters for <br>\nwho can print them. Since friends have full access, you need to decide if they can <br>\nprint them ut. When they do, you lose a bit of control. The default is that only you <br>\ncan print out o photos you have uploaded to <b>Facebook</b>. Click Photos Photo <br>\nPrintshop link select privacy setting. B. Resizing Photos and Thumbnails There <br>\nare a number of options when adding photos to your <b>Facebook</b> profile. Your <br>\n<b>Facebook</b>&nbsp;..."
+        "textSnippet": "They simply expand on an idea that already exists.” Despite all the coverage of Twitter&#39;s rise, Nick Bilton of The New York Times is the first journalist to tell the full story?a gripping drama of betrayed friendships and highstakes power ..."
       }
     }
   ]
