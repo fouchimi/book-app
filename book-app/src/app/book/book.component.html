@@ -16,6 +16,12 @@
   </div>
 </div>
 
+<div class="text-center middle">
+  <div [@flyInOut] class="alert alert-success" [hidden]="!show">
+    <strong>Success!</strong> Book was added successfully in your shelves
+  </div>
+</div>
+
 <div *ngIf="books.length > 0">
   <div class="card">
     <mat-card class="book-card" *ngFor="let book of books">
@@ -25,7 +31,7 @@
           <span class="h4">{{ book.volumeInfo.title }}</span>
         </mat-card-title>
       </mat-card-header>
-      <img mat-card-image [src]="book.volumeInfo.imageLinks.thumbnail" height="650" alt="Photo of book">
+      <img mat-card-image [src]="book.volumeInfo.imageLinks.thumbnail" height="450" alt="Photo of book">
       <mat-card-content>
         <p>
           {{ book.volumeInfo.description | summary }}

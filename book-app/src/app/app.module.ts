@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { baseURL } from './shared/baseurl';
 import { RestangularConfigFactory } from './shared/restConfig';
 import { RestangularModule, Restangular } from 'ngx-restangular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MatCardModule, MatButtonModule } from '@angular/material';
 import { RouterModule, Routes } from '@angular/router';
@@ -33,7 +34,8 @@ const routes: Routes = [
     RestangularModule.forRoot(RestangularConfigFactory),
     MatCardModule,
     MatButtonModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   providers: [BookService, { provide: 'BaseURL', useValue: baseURL }],
   bootstrap: [AppComponent]
