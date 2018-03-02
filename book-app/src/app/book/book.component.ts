@@ -70,9 +70,9 @@ export class BookComponent implements OnInit {
   }
 
   compare(first, second) {
-    const firstBookId = first.id.toUpperCase();
-    const secondBookId = second.id.toUpperCase();
-    return (firstBookId > secondBookId) ? 1 : ((secondBookId > firstBookId) ? -1 : 0);
+    const firstTitle = first.volumeInfo.title.toUpperCase();
+    const secondTitle = second.volumeInfo.title.toUpperCase();
+    return firstTitle.localeCompare(secondTitle);
   }
 
 }
