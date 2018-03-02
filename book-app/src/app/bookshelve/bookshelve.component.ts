@@ -20,8 +20,6 @@ export class BookshelveComponent implements OnInit {
   ngOnInit() {
     this.bookService.getFavorites(localhostURL + '/bookshelves')
       .then(response => {
-        /*response.bookshelves.forEach(result => result.volumeInfo.title = result.volumeInfo.title.substr(0, 30));*/
-        console.log(response);
         this.favorites = response;
       }).catch(error => console.log(error));
   }
@@ -30,9 +28,8 @@ export class BookshelveComponent implements OnInit {
     this.show = true;
     this.favorites = this.favorites.filter(b => b.volumeInfo.title !== book.volumeInfo.title);
     this.bookService.deleteBook(localhostURL + '/bookshelves', book.id).then(response => {
-      console.log(response);
       const tempElement = this.myElement;
-      setTimeout(() => { tempElement.nativeElement.remove(); }, 3000);
+      setTimeout(() => { tempElement.nativeElement.previousElementSibling.remove(); }, 3000);
     })
     .then(() => { setTimeout(() => { this.show = false; }, 1000); })
     .catch(error => console.error(error));
