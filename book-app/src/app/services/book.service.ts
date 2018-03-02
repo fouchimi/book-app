@@ -4,9 +4,6 @@ import { Http, Response, Headers, RequestOptions, URLSearchParams } from '@angul
 
 import 'rxjs/add/operator/toPromise';
 
-
-import { Book } from '../shared/book';
-
 @Injectable()
 export class BookService {
 

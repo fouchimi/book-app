@@ -2,204 +2,49 @@
   "bookshelves": [
     {
       "kind": "books#volume",
-      "id": "k85pcYttpW0C",
-      "etag": "ip/hx++V+50",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/k85pcYttpW0C",
+      "id": "5pPYAODf6ZAC",
+      "etag": "b9BXQiTyANo",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/5pPYAODf6ZAC",
       "volumeInfo": {
-        "title": "The Audacity of Hope",
-        "subtitle": "Thoughts on Reclaiming the American Dream",
-        "authors": [
-          "Barack Obama"
-        ],
-        "publisher": "Crown",
-        "publishedDate": "2006-10-17",
-        "description": "In July 2004, Barack Obama electrified the Democratic National Convention with an address that spoke to Americans across the political spectrum. One phrase in particular anchored itself in listeners’ minds, a reminder that for all the discord and struggle to be found in our history as a nation, we have always been guided by a dogged optimism in the future, or what Obama called “the audacity of hope.” The Audacity of Hope is Barack Obama’s call for a different brand of politics—a politics for those weary of bitter partisanship and alienated by the “endless clash of armies” we see in congress and on the campaign trail; a politics rooted in the faith, inclusiveness, and nobility of spirit at the heart of “our improbable experiment in democracy.” He explores those forces—from the fear of losing to the perpetual need to raise money to the power of the media—that can stifle even the best-intentioned politician. He also writes, with surprising intimacy and self-deprecating humor, about settling in as a senator, seeking to balance the demands of public service and family life, and his own deepening religious commitment. At the heart of this book is Barack Obama’s vision of how we can move beyond our divisions to tackle concrete problems. He examines the growing economic insecurity of American families, the racial and religious tensions within the body politic, and the transnational threats—from terrorism to pandemic—that gather beyond our shores. And he grapples with the role that faith plays in a democracy—where it is vital and where it must never intrude. Underlying his stories about family, friends, and members of the Senate is a vigorous search for connection: the foundation for a radically hopeful political consensus. A public servant and a lawyer, a professor and a father, a Christian and a skeptic, and above all a student of history and human nature, Barack Obama has written a book of transforming power. Only by returning to the principles that gave birth to our Constitution, he says, can Americans repair a political process that is broken, and restore to working order a government that has fallen dangerously out of touch with millions of ordinary Americans. Those Americans are out there, he writes—“waiting for Republicans and Democrats to catch up with them.” From the Hardcover edition.",
-        "industryIdentifiers": [
-          {
-            "type": "ISBN_13",
-            "identifier": "9780307382092"
-          },
-          {
-            "type": "ISBN_10",
-            "identifier": "0307382095"
-          }
-        ],
+        "title": "Football",
+        "publisher": "Taylor & Francis",
         "readingModes": {
-          "text": true,
+          "text": false,
           "image": true
         },
-        "pageCount": 320,
         "printType": "BOOK",
-        "categories": [
-          "Biography & Autobiography"
-        ],
-        "averageRating": 4,
-        "ratingsCount": 110,
         "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": true,
-        "contentVersion": "1.4.4.0.preview.3",
-        "panelizationSummary": {
-          "containsEpubBubbles": false,
-          "containsImageBubbles": false
-        },
+        "allowAnonLogging": false,
+        "contentVersion": "0.0.1.0.preview.1",
         "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=k85pcYttpW0C&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=k85pcYttpW0C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          "smallThumbnail": "http://books.google.com/books/content?id=5pPYAODf6ZAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=5pPYAODf6ZAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         "language": "en",
-        "previewLink": "http://books.google.com/books?id=k85pcYttpW0C&printsec=frontcover&dq=Obama&hl=&cd=3&source=gbs_api",
-        "infoLink": "https://play.google.com/store/books/details?id=k85pcYttpW0C&source=gbs_api",
-        "canonicalVolumeLink": "https://market.android.com/details?id=book-k85pcYttpW0C"
+        "previewLink": "http://books.google.com/books?id=5pPYAODf6ZAC&printsec=frontcover&dq=Football&hl=&cd=3&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=5pPYAODf6ZAC&dq=Football&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Football.html?hl=&id=5pPYAODf6ZAC"
       },
       "saleInfo": {
         "country": "US",
-        "saleability": "FOR_SALE",
-        "isEbook": true,
-        "listPrice": {
-          "amount": 11.99,
-          "currencyCode": "USD"
-        },
-        "retailPrice": {
-          "amount": 11.99,
-          "currencyCode": "USD"
-        },
-        "buyLink": "https://play.google.com/store/books/details?id=k85pcYttpW0C&rdid=book-k85pcYttpW0C&rdot=1&source=gbs_api",
-        "offers": [
-          {
-            "finskyOfferType": 1,
-            "listPrice": {
-              "amountInMicros": 11990000,
-              "currencyCode": "USD"
-            },
-            "retailPrice": {
-              "amountInMicros": 11990000,
-              "currencyCode": "USD"
-            },
-            "giftable": true
-          }
-        ]
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
       },
       "accessInfo": {
         "country": "US",
         "viewability": "PARTIAL",
         "embeddable": true,
         "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "textToSpeechPermission": "ALLOWED",
         "epub": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/The_Audacity_of_Hope-sample-epub.acsm?id=k85pcYttpW0C&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          "isAvailable": false
         },
         "pdf": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/The_Audacity_of_Hope-sample-pdf.acsm?id=k85pcYttpW0C&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+          "isAvailable": false
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=k85pcYttpW0C&hl=&printsec=frontcover&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=5pPYAODf6ZAC&hl=&printsec=frontcover&source=gbs_api",
         "accessViewStatus": "SAMPLE",
         "quoteSharingAllowed": false
-      },
-      "searchInfo": {
-        "textSnippet": "At the heart of this book is Barack Obama’s vision of how we can move beyond our divisions to tackle concrete problems."
-      }
-    },
-    {
-      "kind": "books#volume",
-      "id": "HRCHJp-V0QUC",
-      "etag": "QotYOi3Do00",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/HRCHJp-V0QUC",
-      "volumeInfo": {
-        "title": "Dreams from My Father",
-        "subtitle": "A Story of Race and Inheritance",
-        "authors": [
-          "Barack Obama"
-        ],
-        "publisher": "Broadway Books",
-        "publishedDate": "2007-01-09",
-        "description": "In this lyrical, unsentimental, and compelling memoir, the son of a black African father and a white American mother searches for a workable meaning to his life as a black American. It begins in New York, where Barack Obama learns that his father—a figure he knows more as a myth than as a man—has been killed in a car accident. This sudden death inspires an emotional odyssey—first to a small town in Kansas, from which he retraces the migration of his mother’s family to Hawaii, and then to Kenya, where he meets the African side of his family, confronts the bitter truth of his father’s life, and at last reconciles his divided inheritance. Pictured in lefthand photograph on cover: Habiba Akumu Hussein and Barack Obama, Sr. (President Obama's paternal grandmother and his father as a young boy). Pictured in righthand photograph on cover: Stanley Dunham and Ann Dunham (President Obama's maternal grandfather and his mother as a young girl). From the Trade Paperback edition.",
-        "industryIdentifiers": [
-          {
-            "type": "ISBN_10",
-            "identifier": "0307394123"
-          },
-          {
-            "type": "ISBN_13",
-            "identifier": "9780307394125"
-          }
-        ],
-        "readingModes": {
-          "text": true,
-          "image": true
-        },
-        "pageCount": 464,
-        "printType": "BOOK",
-        "categories": [
-          "Biography & Autobiography"
-        ],
-        "averageRating": 3.5,
-        "ratingsCount": 183,
-        "maturityRating": "NOT_MATURE",
-        "allowAnonLogging": true,
-        "contentVersion": "0.10.5.0.preview.3",
-        "panelizationSummary": {
-          "containsEpubBubbles": false,
-          "containsImageBubbles": false
-        },
-        "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=HRCHJp-V0QUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=HRCHJp-V0QUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
-        },
-        "language": "en",
-        "previewLink": "http://books.google.com/books?id=HRCHJp-V0QUC&printsec=frontcover&dq=Obama&hl=&cd=2&source=gbs_api",
-        "infoLink": "https://play.google.com/store/books/details?id=HRCHJp-V0QUC&source=gbs_api",
-        "canonicalVolumeLink": "https://market.android.com/details?id=book-HRCHJp-V0QUC"
-      },
-      "saleInfo": {
-        "country": "US",
-        "saleability": "FOR_SALE",
-        "isEbook": true,
-        "listPrice": {
-          "amount": 12.99,
-          "currencyCode": "USD"
-        },
-        "retailPrice": {
-          "amount": 12.99,
-          "currencyCode": "USD"
-        },
-        "buyLink": "https://play.google.com/store/books/details?id=HRCHJp-V0QUC&rdid=book-HRCHJp-V0QUC&rdot=1&source=gbs_api",
-        "offers": [
-          {
-            "finskyOfferType": 1,
-            "listPrice": {
-              "amountInMicros": 12990000,
-              "currencyCode": "USD"
-            },
-            "retailPrice": {
-              "amountInMicros": 12990000,
-              "currencyCode": "USD"
-            },
-            "giftable": true
-          }
-        ]
-      },
-      "accessInfo": {
-        "country": "US",
-        "viewability": "PARTIAL",
-        "embeddable": true,
-        "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
-        "epub": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Dreams_from_My_Father-sample-epub.acsm?id=HRCHJp-V0QUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "pdf": {
-          "isAvailable": true,
-          "acsTokenLink": "http://books.google.com/books/download/Dreams_from_My_Father-sample-pdf.acsm?id=HRCHJp-V0QUC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
-        },
-        "webReaderLink": "http://play.google.com/books/reader?id=HRCHJp-V0QUC&hl=&printsec=frontcover&source=gbs_api",
-        "accessViewStatus": "SAMPLE",
-        "quoteSharingAllowed": false
-      },
-      "searchInfo": {
-        "textSnippet": "Pictured in righthand photograph on cover: Stanley Dunham and Ann Dunham (President Obama&#39;s maternal grandfather and his mother as a young girl). From the Trade Paperback edition."
       }
     }
   ]

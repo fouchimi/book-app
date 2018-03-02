@@ -7,6 +7,15 @@
 }
 
 .book-card {
-    width: 460px;
+    width: 450px;
     margin: 20px;
+}
+
+.alert {
+    width: 400px;
+}
+
+.middle {
+    margin: 20px auto;
+    width: 600px;
 }
