@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { baseURL, apiKey, localhostURL } from '../shared/baseurl';
 import { BookService } from '../services/book.service';
 
@@ -22,7 +22,7 @@ export class BookComponent implements OnInit {
   bookShelves = [];
   show = false;
 
-  constructor(private bookService: BookService, private myElement: ElementRef) { }
+  constructor(private bookService: BookService) { }
 
   ngOnInit() {
     const url = localhostURL + '/bookshelves';
@@ -59,8 +59,7 @@ export class BookComponent implements OnInit {
     this.bookService.addBook(localhostURL + '/bookshelves', book)
       .then((response) => {
         console.log('Book was successfully inserted');
-        const tempElement = this.myElement;
-        setTimeout(() => { tempElement.nativeElement.previousElementSibling.remove(); }, fadeInMs);
+        setTimeout(() => { console.log('Waiting for the alert to fade ..'); }, fadeInMs);
       })
       .then(() => { setTimeout(() => { this.show = false; }, 1000); })
       .catch(error => console.log(error));

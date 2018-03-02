@@ -28,8 +28,7 @@ export class BookshelveComponent implements OnInit {
     this.show = true;
     this.favorites = this.favorites.filter(b => b.volumeInfo.title !== book.volumeInfo.title);
     this.bookService.deleteBook(localhostURL + '/bookshelves', book.id).then(response => {
-      const tempElement = this.myElement;
-      setTimeout(() => { tempElement.nativeElement.previousElementSibling.remove(); }, 3000);
+      setTimeout(() => { console.log('Waiting for the alert to fade in and out'); }, 3000);
     })
     .then(() => { setTimeout(() => { this.show = false; }, 1000); })
     .catch(error => console.error(error));

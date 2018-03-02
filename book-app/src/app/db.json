@@ -2,73 +2,198 @@
   "bookshelves": [
     {
       "kind": "books#volume",
-      "id": "pBIKPBAqmfAC",
-      "etag": "dzr9YgZ+F30",
-      "selfLink": "https://www.googleapis.com/books/v1/volumes/pBIKPBAqmfAC",
+      "id": "UjZsrGzPJeIC",
+      "etag": "7lYyZI/rSIA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/UjZsrGzPJeIC",
       "volumeInfo": {
-        "title": "My Soccer Book",
+        "title": "The Facebook Book",
         "authors": [
-          "Gail Gibbons"
+          "Greg Atwan",
+          "Evan Lushing"
         ],
-        "publisher": "Harper Collins",
-        "publishedDate": "2000-03-01",
-        "description": "Soccer is fun - let's play! Find all the basics in this lively guide. The markings on a soccer field What soccer players wear The positions, from forward to goalkeeper The excitement of pasing a ball The thrill of making a goal All these and more are included, with a useful glossary at the end.",
+        "publisher": "Abrams",
+        "publishedDate": "2011-12-23",
+        "description": "The Facebook Book, by Harvard alums and early Booksters Atwan and Lushing, follows in the fine satirical tradition of The Official Preppy Handbook and The Hipster Handbook, full of anecdotes (true and semi-true), tips (useful and useless), and other insights, including chapters on the Ethics and Etiquette of using the 'Book, what your profile really says about you, and a Facebook dictionary (which defines for the uninitiated terms like \"frenemey\" and \"fauxmance\"). The Facebook Book will appeal not only to undergrads, but also high schoolers (to whom the site was recently opened), savvy parents, and anyone who's tapped into Web 2.0 culture and counterculture.",
         "industryIdentifiers": [
           {
             "type": "ISBN_13",
-            "identifier": "9780688171384"
+            "identifier": "9781613123584"
           },
           {
             "type": "ISBN_10",
-            "identifier": "0688171389"
+            "identifier": "1613123582"
           }
         ],
         "readingModes": {
-          "text": false,
-          "image": false
+          "text": true,
+          "image": true
         },
-        "pageCount": 24,
+        "pageCount": 192,
         "printType": "BOOK",
         "categories": [
-          "Juvenile Nonfiction"
+          "Humor"
         ],
-        "averageRating": 3,
-        "ratingsCount": 2,
-        "maturityRating": "NOT_MATURE",
+        "maturityRating": "MATURE",
         "allowAnonLogging": false,
         "contentVersion": "preview-1.0.0",
         "imageLinks": {
-          "smallThumbnail": "http://books.google.com/books/content?id=pBIKPBAqmfAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-          "thumbnail": "http://books.google.com/books/content?id=pBIKPBAqmfAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+          "smallThumbnail": "http://books.google.com/books/content?id=UjZsrGzPJeIC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=UjZsrGzPJeIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         },
         "language": "en",
-        "previewLink": "http://books.google.com/books?id=pBIKPBAqmfAC&printsec=frontcover&dq=Soccer&hl=&cd=1&source=gbs_api",
-        "infoLink": "http://books.google.com/books?id=pBIKPBAqmfAC&dq=Soccer&hl=&source=gbs_api",
-        "canonicalVolumeLink": "https://books.google.com/books/about/My_Soccer_Book.html?hl=&id=pBIKPBAqmfAC"
+        "previewLink": "http://books.google.com/books?id=UjZsrGzPJeIC&printsec=frontcover&dq=Facebook&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=UjZsrGzPJeIC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-UjZsrGzPJeIC"
       },
       "saleInfo": {
         "country": "US",
-        "saleability": "NOT_FOR_SALE",
-        "isEbook": false
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 13.46,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 9.99,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=UjZsrGzPJeIC&rdid=book-UjZsrGzPJeIC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 13460000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 9990000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
       },
       "accessInfo": {
         "country": "US",
         "viewability": "PARTIAL",
         "embeddable": true,
         "publicDomain": false,
-        "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
+        "textToSpeechPermission": "ALLOWED",
         "epub": {
-          "isAvailable": false
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Facebook_Book-sample-epub.acsm?id=UjZsrGzPJeIC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
         },
         "pdf": {
-          "isAvailable": false
+          "isAvailable": true,
+          "acsTokenLink": "http://books.google.com/books/download/The_Facebook_Book-sample-pdf.acsm?id=UjZsrGzPJeIC&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
         },
-        "webReaderLink": "http://play.google.com/books/reader?id=pBIKPBAqmfAC&hl=&printsec=frontcover&source=gbs_api",
+        "webReaderLink": "http://play.google.com/books/reader?id=UjZsrGzPJeIC&hl=&printsec=frontcover&source=gbs_api",
         "accessViewStatus": "SAMPLE",
         "quoteSharingAllowed": false
       },
       "searchInfo": {
-        "textSnippet": "Soccer is fun - let&#39;s play! Find all the basics in this lively guide."
+        "textSnippet": "The Facebook Book, by Harvard alums and early Booksters Atwan and Lushing, follows in the fine satirical tradition of The Official Preppy Handbook and The Hipster Handbook, full of anecdotes (true and semi-true), tips (useful and useless), ..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "7yKq7X32ZhAC",
+      "etag": "cGH/7NqKx4k",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/7yKq7X32ZhAC",
+      "volumeInfo": {
+        "title": "Facebook Fanatic",
+        "subtitle": "Explode Your Popularity, Secure Your Privacy and Buzz Your Band on Facebook",
+        "authors": [
+          "BottleTree Books LLC (Firm)",
+          "Bottletree Books",
+          "Editors of Bottletree Books LLC"
+        ],
+        "publisher": "Bottletree Books LLC",
+        "publishedDate": "2007-06-01",
+        "description": "Find out how to launch your career to 15 million potential customers. Learn how to get crazy popular. Concerned about privacy? Read how to secure it in every area. Here are a few of the topics covered: 75 Ways to Buzz Your Band; Popularity Tips and Tricks to Make You Facebook Royalty; Coolest Profile Names and URLs; Get Celebrities and Famous Bands as Your Friend; Poking and Prodding, Oh My; Rock the Facebook Vote; Be a Blog Hog; Climbing the Wall; Go Underground on Facebook with Little Used Privacy Settings; Make Money Off Your Videos; 55 Ways for Authors to Buzz Their Book; 70 Ways to Get Films Recognized; and 40 Ways to Zoom a Political Campaign. Read today and rule Facebook tomorrow!",
+        "industryIdentifiers": [
+          {
+            "type": "ISBN_13",
+            "identifier": "9781933747064"
+          },
+          {
+            "type": "ISBN_10",
+            "identifier": "1933747064"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 268,
+        "printType": "BOOK",
+        "categories": [
+          "Computers"
+        ],
+        "averageRating": 3.5,
+        "ratingsCount": 42,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": true,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=7yKq7X32ZhAC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=7yKq7X32ZhAC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=7yKq7X32ZhAC&pg=PA65&dq=Facebook&hl=&cd=5&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=7yKq7X32ZhAC&source=gbs_api",
+        "canonicalVolumeLink": "https://market.android.com/details?id=book-7yKq7X32ZhAC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FOR_SALE",
+        "isEbook": true,
+        "listPrice": {
+          "amount": 2.99,
+          "currencyCode": "USD"
+        },
+        "retailPrice": {
+          "amount": 2.51,
+          "currencyCode": "USD"
+        },
+        "buyLink": "https://play.google.com/store/books/details?id=7yKq7X32ZhAC&rdid=book-7yKq7X32ZhAC&rdot=1&source=gbs_api",
+        "offers": [
+          {
+            "finskyOfferType": 1,
+            "listPrice": {
+              "amountInMicros": 2990000,
+              "currencyCode": "USD"
+            },
+            "retailPrice": {
+              "amountInMicros": 2510000,
+              "currencyCode": "USD"
+            },
+            "giftable": true
+          }
+        ]
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "PARTIAL",
+        "embeddable": true,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": true
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=7yKq7X32ZhAC&hl=&printsec=frontcover&source=gbs_api",
+        "accessViewStatus": "SAMPLE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "An important privacy setting for your <b>Facebook</b> photos is to set the parameters for <br>\nwho can print them. Since friends have full access, you need to decide if they can <br>\nprint them ut. When they do, you lose a bit of control. The default is that only you <br>\ncan print out o photos you have uploaded to <b>Facebook</b>. Click Photos Photo <br>\nPrintshop link select privacy setting. B. Resizing Photos and Thumbnails There <br>\nare a number of options when adding photos to your <b>Facebook</b> profile. Your <br>\n<b>Facebook</b>&nbsp;..."
       }
     }
   ]
