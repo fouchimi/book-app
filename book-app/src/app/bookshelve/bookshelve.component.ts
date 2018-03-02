@@ -32,7 +32,7 @@ export class BookshelveComponent implements OnInit {
     this.bookService.deleteBook(localhostURL + '/bookshelves', book.id).then(response => {
       console.log(response);
       const tempElement = this.myElement;
-      setTimeout(() => { tempElement.nativeElement.previousElementSibling.remove(); }, 3000);
+      setTimeout(() => { tempElement.nativeElement.remove(); }, 3000);
     })
     .then(() => { setTimeout(() => { this.show = false; }, 1000); })
     .catch(error => console.error(error));

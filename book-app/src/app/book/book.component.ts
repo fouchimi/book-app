@@ -60,7 +60,7 @@ export class BookComponent implements OnInit {
       .then((response) => {
         console.log('Book was successfully inserted');
         const tempElement = this.myElement;
-        setTimeout(() => { tempElement.nativeElement.previousElementSibling.remove(); }, fadeInMs);
+        setTimeout(() => { tempElement.nativeElement.remove(); }, fadeInMs);
       })
       .then(() => { setTimeout(() => { this.show = false; }, 1000); })
       .catch(error => console.log(error));
